@@ -1,0 +1,166 @@
+					Assignment-1
+sid:200240520041			kalpesh R patil
+
+Q1. Explore the following commands with various options, refer man pages for 
+    further help a) date b) cal c) bc d) echo e) who f) whoami g) logname g) uname h)
+    seq i) clear
+ANS:- 
+a) date
+date 
+date +%a
+date +%A
+date +%b
+date +%B
+date +%d
+date +%D 
+date +%F 
+date +%T 
+b) cal
+cal jan 2020
+
+c) bc  :- calculator operations
+d) echo 
+echo => echo command in linux is used to display line of text/string that are passed as an
+ argument .
+
+e) who 
+who =>  The who command is used to get information about currently logged in user on to system
+f) whoami 
+whoami =>  To display system’s username
+g) logname
+logname => print user´s login name,Print the name of the current user
+ g) uname
+uname => uname is a command-line utility that prints basic information about the 
+operating system name and system hardware
+ h) seq 
+i) clear
+clear => clear screen.
+Q2.
+A) Create three directory a b and c and create a.txt,b.txt and c.txt in each directory respectively and then copy c directory into the a.
+ANS
+mkdir a b c
+cd a
+touch a.txt b.txt c.txt
+cd 
+cd b
+touch a.txt b.txt c.txt
+Cd
+cd c
+touch a.txt b.txt c.txt
+cp -r c a
+B)Move Directory b to c.
+mv b c
+C)Create alias of ls -lh command to your name.
+alias kalpesh="ls -lh"
+D)Change Directory name a to cdac.
+mv a cdac
+
+Q3. A) Create five files file1.txt , file2.txt ,file3.txt file4.txt and
+    file5.txt with some text inside it. Search for 's' character
+    inside all the files using grep command.
+    Also Use cat to view all file content together.
+ANS:-
+touch file1.txt file2.txt file3.txt file4.txt file5.txt
+echo 'pravin'>> file1.txt file2.txt file3.txt file4.txt file5.txt  
+
+B)Create file.txt using cat and edit that using nano editor.
+ANS :-
+cat file1.txt file2.txt file3.txt file4.txt file5.txt
+
+c)Create 5 empty files using touch command
+ANS:- touch file1.txt file2.txt file3.txt file4.txt file5.txt
+D)Remove previously created directory a , b and c.
+ANS:- rm -r c cdac a
+
+Q4. Create a file with some content using vi editor
+ANS:-
+vi file.txt 
+a) Display the file using cat command
+cat file.txt
+b) Display line numbers along with content
+cat -n file.txt
+c) Display the file in reverse order using tac
+tac file.txt
+d) Combine multiple files using cat command
+
+Q5. Create Random some files and sub directories.
+a)	display files row wise, column wise, 1 per row
+ANS:-
+ ls 
+ls  -1a
+b)	sort the files in ascending, descending order
+ANS:- 
+sort filename.txt
+ sort -r filename.txt
+c)	Create some hidden files and sub directories and display them using “ls -a”
+ANS:-
+mkdir .aa .bb .c.txt 
+ls -a
+d) Change time stamp of some files and directories using touch command and display the files using ls -t ls -rt
+ANS:- touch -a file1.txt file2.txt
+ls -t
+e)	Recursive display contents of your home directory.
+ANS:- ls -r
+	f) display all attributes of files and directories using ls -l
+ANS:- ls -l
+g)	display attributes of a directory using ls -ld
+ANS:- ls -ld
+
+
+==================================================================================
+1)mkdir kalpesh 
+touch a.txt b.txt c.txt dtxt
+chmod u-rwx kalpesh
+a)chmod u+rw- bar
+b)chmod +r--
+c) chmod +x
+
+2)chmod +x kalpesh
+3)chmod -wx kalpesh	
+4)echo * kalpesh
+5)echo * /etc/
+6)find /etc -type f -name "*.conf"
+7)echo 'hiii' >> a.txt
+
+1)
+
+mkdir a
+cd a
+touch a.txt 
+touch .hidden.txt
+a.
+mkdir b
+cd b
+touch b.txt 
+touch .hidden1.txt
+b.mkdir c
+touch c.txt 
+touch .hidden2.txt
+c. cp -r  c a
+d.cp -r a/a.txt a/b
+ cp -r a/c/ a/b
+
+2)
+chmod a=r c
+
+3)permission denied
+4)mkdir data
+5) chmod +rw b
+6)mkdir data2
+7)touch data.txt
+8)mv c copied_dir
+9)chmod +x copied_dir
+10)ls
+11)permission denied for hidden file,c.txt file
+12)mv a/b/data/ a
+13)sudo chmod
+14)chmod o+rwx a
+15)mkdir sample
+16)mkdir x
+17)mv  x a
+18)mkdir movies
+21)chmod a=rwx a
+25)rm b.txt
+
+
+
